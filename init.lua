@@ -1,6 +1,5 @@
 require 'setup.keymaps'
-require 'setup.settings'
--- [[ Install `lazy.nvim` plugin manager ]]
+require 'setup.settings' -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -11,7 +10,6 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     end
 end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
-
 -- [[ Configure and install plugins ]]
 -- To check the current status of your plugins, run
 --    :Lazy
@@ -34,3 +32,8 @@ require('lazy').setup {
     require 'plugins.ui',
     require 'plugins.extra',
 }
+
+
+
+
+

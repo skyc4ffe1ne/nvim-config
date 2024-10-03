@@ -92,8 +92,8 @@ return {
                 },
                 name = {
                     trailing_slash = false,
-                    use_git_status_colors = true,
-                    highlight = 'NeoTreeFileName',
+                    use_git_status_colors = false,
+                    highlight = "NeoTreeFileName"
                 },
                 git_status = {
                     symbols = {
@@ -103,9 +103,9 @@ return {
                         deleted = '✖', -- this can only be used in the git_status source
                         renamed = '󰁕', -- this can only be used in the git_status source
                         -- Status type
-                        untracked = '',
+                        untracked = '',
                         ignored = '',
-                        unstaged = '󰄱',
+                        unstaged = '',
                         staged = '',
                         conflict = '',
                     },

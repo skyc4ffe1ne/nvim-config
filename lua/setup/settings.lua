@@ -58,3 +58,19 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank()
   end,
 })
+
+function ToggleTheme()
+  if vim.o.background == "dark" then
+    vim.o.background = "light"
+    vim.cmd("colorscheme default")
+    vim.cmd("set background=light")  -- Usa il tema light di default
+  else
+    vim.o.background = "dark"
+    vim.cmd("colorscheme cyberdream")  -- Usa il tuo tema dark personalizzato
+  end
+end
+
+vim.api.nvim_set_keymap('n', '<leader>tt', ':lua ToggleTheme()<CR>', { noremap = true, silent = true })
+
+
+

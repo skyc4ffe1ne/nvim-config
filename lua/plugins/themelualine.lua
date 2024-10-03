@@ -1,5 +1,5 @@
 local colors = {
-    bg = '#434343',
+    bg = vim.opt.background == "dark" and '#ffffff00' or '#000000',
 
     bgN = '#000',
     fgN = '#e5e7eb',
@@ -52,24 +52,29 @@ local colors = {
 
     white = '#ebf8fe',
     black2 = '#02141d',
+
+    yellow_Normal = "#cfef53",
+
 }
 
 local custom = {
     normal = {
-        a = { fg = colors.white, bg = colors.purple2, gui = 'bold' },
-        b = { fg = colors.light_azure2, bg = colors.purple, gui = 'italic' },
-        c = { fg = colors.purple2, bg = colors.bg },
+        a = { fg = colors.black2, bg = colors.yellow_Normal, gui = 'bold' },
+        b = { fg = colors.yellow_Normal, bg = colors.bg, gui = 'italic' },
+        c = { fg = colors.white, bg = colors.bg },
         x = { fg = colors.white, bg = colors.bg },
         y = { fg = colors.azure, bg = colors.bg, gui = 'italic' },
     },
     insert = {
         a = { fg = colors.black2, bg = colors.azure2, gui = 'bold' },
-        c = { fg = colors.azure2, bg = colors.bg },
+        b = { fg = colors.azure2, bg = colors.bg },
+        c = { fg = colors.white, bg = colors.bg },
         x = { fg = colors.black2, bg = colors.bg },
     },
     visual = {
         a = { fg = colors.fgV, bg = colors.bgV, gui = 'bold' },
-        c = { fg = colors.bgV, bg = colors.bg },
+        b = { fg = colors.bgV, bg = colors.bg },
+        c = { fg = colors.white, bg = colors.bg },
         x = { fg = colors.fgv, bg = colors.bg },
     },
     terminal = {

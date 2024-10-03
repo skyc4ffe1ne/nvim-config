@@ -40,9 +40,10 @@ return {
                     -- Example:
                     --['@property'] = { fg = colors.light_pink, bold = false },
                     return {
+
                         Comment = { fg = '#6f6f6f', bg = 'NONE', italic = false },
 
-                        CursorLine = { bg = 'NONE', underline = true }, -- current line
+                        --CursorLine = { bg = '#6f86ac' }, -- current line
                         Search = { fg = colors.black2, bg = colors.azure2 },
                         IncSearch = { fg = colors.black2, bg = colors.azure2 }, -- while i'm searching
                         CurSearch = { fg = colors.white, bg = colors.black2 }, -- while the cursor is on the match
@@ -57,7 +58,7 @@ return {
                         Function = { fg = colors.light_purple2 },
 
                         Statement = { fg = colors.light_purple2 }, -- if,else,switch,for,return etc..
-                        Operator = { fg = '#6f6f6f' }, -- = + - /
+                        Operator = { fg = '#6f6f6f' }, -- = + - /etc/
                         Keyword = { fg = colors.purple2 },
                         --PreProc = { fg = colors.black }, -- #include (c)
                         --Label = { fg = colors.purple }, -- ::mylabel:: (lua)
@@ -76,7 +77,6 @@ return {
                     -- For a list of colors see `lua/cyberdream/colours.lua`
                     -- Example:
                     black = '#000000',
-                    --          white = '#ECF2FF',
 
                     light_pink = '#F06080',
                     red = '#F05080',
@@ -84,13 +84,17 @@ return {
                     light_azure = '#BAE6FD',
                     light_grey = '#E5E5E5',
 
-                    --          lime = '#B3E8B4',
                     lime = '#bafdf3',
 
                     light_white = '#ECF2FF',
 
                     azure = '#7AD9FB',
                     grey = '#BBBBBB',
+
+                    grey_100 = '#efefef',
+                    grey_200 = '#c1c1c1',
+                    grey_300 = '#8c8c8c',
+                    grey_400 = '#6d6d6d',
 
                     purple = '#A390FF',
                     light_purple = '#CABEFF',
